@@ -1,0 +1,33 @@
+.mainPageTitle {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;    color: black;
+
+}
+
+h3 {
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-size: 17px;
+}
+
+h4 {
+    font-family: 'Indie Flower', cursive;
+    color: black;
+}
+
+#main, #sad {
+    background-color: #ffffff;
+}
+#angryButton {
+    background:#FF4136;
+}
+
+#sadButton {
+    background: #0074D9;
+}
+
+#unmotivatedButton{
+    background: #335C4A;
+}
+
+ 
