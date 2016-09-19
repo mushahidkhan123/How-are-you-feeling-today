@@ -76,7 +76,8 @@ function showVideo(id) {
     function putVideosOnListView(data, feeling) {
         console.log(data);
                 $.each(data.items, function(i, item) {
-                    id = item.id.videoId;
+                    if(feeling=="bored"){ id = item.id;} else{ id = item.id.videoId;
+}
                     title = item.snippet.title;
                     thumb = item.snippet.thumbnails.default.url;
 
@@ -92,7 +93,9 @@ function showVideo(id) {
                 part:'snippet',
                 chart:'mostPopular',
                 key: 'AIzaSyB9C6oHhiv8JyzlKS71R9LBhqSpXqqJv20'
-            }, function(data){putVideosOnListView(data, "bored");}
+            }, function(data){
+                console.log(data);
+                putVideosOnListView(data, "bored");}
             );
     }
  
