@@ -39,7 +39,7 @@ function findVideos(feeling){
     var searchText;
     var maxResults;
     if(feeling == "sad"){
-        searchText = "i feel sad";
+        searchText = "how to not be sad";
         maxResults=5;
     }
 
