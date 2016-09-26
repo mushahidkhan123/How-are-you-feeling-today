@@ -19,10 +19,10 @@ $(document).ready(function(){
         $(document).on('click', '#vidPageBackButton', function(){
             $("#vidArea").empty();
         });
+        
+        document.addEventListener("backbutton", yourCallbackFunction, false);
 
-         (document).addEventListener("backbutton", function(e){
-            $("#vidArea").empty();
-         });
+         
 
         $(document).on('click', '#boredButton', function(){
             $("#videoListbored").empty();
@@ -31,8 +31,13 @@ $(document).ready(function(){
         $(document).on('click', 'li', function(){
             showVideo($(this).attr('videoId'));
         });
+
   
 });
+
+function yourCallbackFunction(){
+    console.log("asdfasdfasd");
+}
 
 function deviceReady() {
     console.log("Device is ready");
