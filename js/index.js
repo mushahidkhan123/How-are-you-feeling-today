@@ -20,7 +20,7 @@ $(document).ready(function(){
             $("#vidArea").empty();
         });
 
-         $(document).addEventListener("backbutton", function(e){
+         (document).addEventListener("backbutton", function(e){
             $("#vidArea").empty();
          });
 
