@@ -20,6 +20,10 @@ $(document).ready(function(){
             $("#vidArea").empty();
         });
 
+         $(document).addEventListener("backbutton", function(e){
+            $("#vidArea").empty();
+         });
+
         $(document).on('click', '#boredButton', function(){
             $("#videoListbored").empty();
             getMostViewedVideo();
