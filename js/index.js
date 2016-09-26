@@ -20,9 +20,9 @@ $(document).ready(function(){
             $("#vidArea").empty();
         });
         
-        document.addEventListener("backbutton", yourCallbackFunction, false);
-
-         
+ 
+         document.addEventListener('backbutton', function(e) {  
+        alert("Back Button Pressed");});
 
         $(document).on('click', '#boredButton', function(){
             $("#videoListbored").empty();
@@ -35,10 +35,7 @@ $(document).ready(function(){
   
 });
 
-function yourCallbackFunction(){
-    console.log("asdfasdfasd");
-}
-
+ 
 function deviceReady() {
     console.log("Device is ready");
 
