@@ -22,7 +22,8 @@ $(document).ready(function(){
         
  
          document.addEventListener('backbutton', function(e) {  
-        alert("Back Button Pressed");});
+            $("#vidArea").empty();
+        });
 
         $(document).on('click', '#boredButton', function(){
             $("#videoListbored").empty();
